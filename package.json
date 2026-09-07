@@ -1,0 +1,14 @@
+{
+  "name": "base-arbitrage-paper-scanner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only paper scanner for WETH/USDC price spreads on Base",
+  "scripts": {
+    "scan": "node scanner.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
