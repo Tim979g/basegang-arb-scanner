@@ -30,9 +30,11 @@
     <strong>Screening estimate—not executable profit.</strong>
     <p class="muted">Displayed pool prices and approximate liquidity impact can identify candidates, but concentrated-liquidity quotes, block simulation, builder payments and competition must be checked before any real trade.</p>
   </section>
+  <h2>Latest coverage</h2>
+  <section id="coverage" class="grid"></section>
   <h2>Recent scans</h2>
   <div class="card table-wrap"><table>
-    <thead><tr><th>Time</th><th>Pools</th><th>Spread</th><th>Best size</th><th>Est. net</th><th>Signal</th></tr></thead>
+    <thead><tr><th>Time</th><th>Best route</th><th>Best size</th><th>Est. net</th><th>Signal</th></tr></thead>
     <tbody id="rows"></tbody>
   </table></div>
   <script>
@@ -48,9 +50,13 @@
         <div class="card"><span class="muted">Signals</span><span class="value">${opportunities.length}</span></div>
         <div class="card"><span class="muted">Latest pools</span><span class="value">${latest?.poolsChecked ?? 0}</span></div>
         <div class="card"><span class="muted">Best estimate</span><span class="value ${(best?.netProfitUsd??0)>=0?'positive':'negative'}">${money(best?.netProfitUsd)}</span></div>`;
+      document.querySelector("#coverage").innerHTML=`
+        <div class="card"><span class="muted">Direct markets</span><span class="value">${latest?.marketsChecked ?? 0}</span></div>
+        <div class="card"><span class="muted">Triangle routes</span><span class="value">${latest?.triangularRoutesChecked ?? 0}</span></div>
+        <div class="card"><span class="muted">New pools (7 days)</span><span class="value">${latest?.newPoolsFound ?? 0}</span></div>
+        <div class="card"><span class="muted">Sizes tested</span><span class="value">${data.config?.tradeSizesUsd?.length ?? 0}</span></div>`;
       document.querySelector("#rows").innerHTML=history.slice(0,100).map(x=>`<tr>
-        <td>${new Date(x.timestamp).toLocaleString()}</td><td>${x.poolsChecked??"—"}</td>
-        <td>${x.best?percent(x.best.rawSpreadPercent):"—"}</td><td>${x.best?money(x.best.tradeSizeUsd):"—"}</td>
+        <td>${new Date(x.timestamp).toLocaleString()}</td><td>${x.best?.route??"—"}</td><td>${x.best?money(x.best.tradeSizeUsd):"—"}</td>
         <td class="${(x.best?.netProfitUsd??-1)>=0?'positive':'negative'}">${x.best?money(x.best.netProfitUsd):"—"}</td>
         <td>${x.opportunity?"YES":"No"}</td></tr>`).join("");
     }).catch(()=>document.querySelector("#updated").textContent="No scan data yet.");
