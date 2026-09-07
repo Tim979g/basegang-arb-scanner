@@ -1,15 +1,17 @@
 {
   "chain": "base",
-  "baseToken": {
-    "symbol": "WETH",
-    "address": "0x4200000000000000000000000000000000000006"
-  },
-  "quoteToken": {
-    "symbol": "USDC",
-    "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
-  },
-  "tradeSizesUsd": [1000, 5000, 10000],
-  "minimumPoolLiquidityUsd": 50000,
+  "tokens": [
+    { "symbol": "USDC", "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", "stable": true },
+    { "symbol": "USDbC", "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA", "stable": true },
+    { "symbol": "DAI", "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb", "stable": true },
+    { "symbol": "WETH", "address": "0x4200000000000000000000000000000000000006" },
+    { "symbol": "cbBTC", "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf" },
+    { "symbol": "AERO", "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631" }
+  ],
+  "tradeSizesUsd": [40, 100, 250, 500, 1000],
+  "minimumPoolLiquidityUsd": 10000,
+  "minimumNewPoolLiquidityUsd": 5000,
+  "newPoolMaxAgeHours": 168,
   "flashLoanFeePercent": 0.05,
   "estimatedDexFeePercentPerSwap": 0.3,
   "estimatedGasUsd": 0.25,
