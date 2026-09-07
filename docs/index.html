@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Base Arbitrage Paper Scanner</title>
+  <style>
+    :root { color-scheme: dark; --bg:#071017; --card:#101d27; --line:#253744; --green:#35e69a; --red:#ff6b75; --muted:#9fb0bd; }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:24px 16px 60px; background:var(--bg); color:#f5f8fa; font:16px/1.45 system-ui,sans-serif; }
+    main { max-width:900px; margin:auto; }
+    h1 { font-size:clamp(1.8rem,7vw,3rem); margin:.25rem 0; }
+    .muted { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:24px 0; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; }
+    .value { display:block; font-size:1.45rem; font-weight:800; margin-top:4px; }
+    .positive { color:var(--green); } .negative { color:var(--red); }
+    table { width:100%; border-collapse:collapse; font-size:.9rem; }
+    th,td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); white-space:nowrap; }
+    .table-wrap { overflow-x:auto; }
+    .warning { border-left:4px solid #f4bd50; }
+  </style>
+</head>
+<body><main>
+  <p class="muted">READ-ONLY · NO WALLET · PAPER TEST</p>
+  <h1>Base Arbitrage Scanner</h1>
+  <p id="updated" class="muted">Loading results…</p>
+  <section id="summary" class="grid"></section>
+  <section class="card warning">
+    <strong>Screening estimate—not executable profit.</strong>
+    <p class="muted">Displayed pool prices and approximate liquidity impact can identify candidates, but concentrated-liquidity quotes, block simulation, builder payments and competition must be checked before any real trade.</p>
+  </section>
+  <h2>Recent scans</h2>
+  <div class="card table-wrap"><table>
+    <thead><tr><th>Time</th><th>Pools</th><th>Spread</th><th>Best size</th><th>Est. net</th><th>Signal</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+  <script>
+    const money = value => new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(value ?? 0);
+    const percent = value => `${Number(value ?? 0).toFixed(3)}%`;
+    fetch(`data.json?t=${Date.now()}`).then(r=>r.json()).then(data=>{
+      const history=[...data.history].reverse(); const latest=history[0];
+      document.querySelector("#updated").textContent=`Last scan: ${new Date(data.generatedAt).toLocaleString()}`;
+      const opportunities=history.filter(x=>x.opportunity);
+      const best=history.map(x=>x.best).filter(Boolean).sort((a,b)=>b.netProfitUsd-a.netProfitUsd)[0];
+      document.querySelector("#summary").innerHTML=`
+        <div class="card"><span class="muted">Scans</span><span class="value">${history.length}</span></div>
+        <div class="card"><span class="muted">Signals</span><span class="value">${opportunities.length}</span></div>
+        <div class="card"><span class="muted">Latest pools</span><span class="value">${latest?.poolsChecked ?? 0}</span></div>
+        <div class="card"><span class="muted">Best estimate</span><span class="value ${(best?.netProfitUsd??0)>=0?'positive':'negative'}">${money(best?.netProfitUsd)}</span></div>`;
+      document.querySelector("#rows").innerHTML=history.slice(0,100).map(x=>`<tr>
+        <td>${new Date(x.timestamp).toLocaleString()}</td><td>${x.poolsChecked??"—"}</td>
+        <td>${x.best?percent(x.best.rawSpreadPercent):"—"}</td><td>${x.best?money(x.best.tradeSizeUsd):"—"}</td>
+        <td class="${(x.best?.netProfitUsd??-1)>=0?'positive':'negative'}">${x.best?money(x.best.netProfitUsd):"—"}</td>
+        <td>${x.opportunity?"YES":"No"}</td></tr>`).join("");
+    }).catch(()=>document.querySelector("#updated").textContent="No scan data yet.");
+  </script>
+</main></body></html>
