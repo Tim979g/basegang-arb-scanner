@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { estimateRoundTrip, findBestSpread } from "../lib/calculations.js";
+import { estimateRoundTrip, estimateTriangle, findBestSpread } from "../lib/calculations.js";
 
 test("findBestSpread picks the cheapest buy and highest sale", () => {
   const result = findBestSpread([
@@ -39,4 +39,21 @@ test("invalid liquidity is rejected", () => {
     estimatedGasUsd: 0.25,
     safetyMarginPercent: 0.1
   }));
+});
+
+test("triangle estimate applies three swaps and route liquidity", () => {
+  const result = estimateTriangle({
+    tradeSizeUsd: 100,
+    edges: [
+      { rate: 0.0004, liquidityUsd: 1_000_000 },
+      { rate: 2500, liquidityUsd: 1_000_000 },
+      { rate: 1.02, liquidityUsd: 1_000_000 }
+    ],
+    flashLoanFeePercent: 0.05,
+    dexFeePercentPerSwap: 0.3,
+    estimatedGasUsd: 0.25,
+    safetyMarginPercent: 0.1
+  });
+  assert.ok(result.netProfitUsd > 0);
+  assert.equal(result.estimatedImpactPercentByHop.length, 3);
 });
