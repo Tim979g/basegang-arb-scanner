@@ -15,6 +15,8 @@ Every five minutes, GitHub Actions fetches public pool data for configured Base 
 
 The scanner tolerates one failed market-data request and records a warning instead of throwing away the whole scan. Its workflow also retries a rebased push if two runs finish close together.
 
+For positive and near-positive Aerodrome candidates, version 2.1 calls the exact pool contracts through Base's public RPC and chains the returned token amounts through the complete route. Only an on-chain result above the configured profit threshold counts as a verified signal. Unsupported DEX pool types remain clearly marked as screening-only.
+
 ## Important limitation
 
 This version uses displayed market data and a conservative liquidity-impact approximation. Concentrated-liquidity pools and executable multi-hop quotes cannot be modeled accurately from total USD liquidity alone. A positive signal is a candidate for an on-chain quote and transaction simulation; it must **not** be treated as permission to trade.

@@ -1,12 +1,15 @@
 {
   "name": "base-arbitrage-paper-scanner",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
   "type": "module",
   "description": "Read-only multi-market and triangular paper arbitrage scanner for Base",
   "scripts": {
     "scan": "node scanner.js",
     "test": "node --test"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0"
   },
   "engines": {
     "node": ">=20"

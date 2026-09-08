@@ -2,11 +2,13 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { estimateRoundTrip, estimateTriangle, findBestSpread } from "./lib/calculations.js";
+import { LiveQuoteVerifier } from "./lib/liveQuotes.js";
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const config = JSON.parse(await fs.readFile(path.join(root, "config.json"), "utf8"));
 const outputPath = path.join(root, "docs", "data.json");
 const tokenByAddress = new Map(config.tokens.map((token) => [token.address.toLowerCase(), token]));
+const tokenBySymbol = new Map(config.tokens.map((token) => [token.symbol, token]));
 const number = (value) => Number.isFinite(Number(value)) ? Number(value) : null;
 
 async function fetchTokenPairs(token) {
@@ -95,7 +97,24 @@ try {
   const newPools = pools.filter((pool) => pool.liquidityUsd >= config.minimumNewPoolLiquidityUsd && pool.pairCreatedAt >= cutoff);
   const candidates = [...direct.map((item) => ({ type: "direct", route: item.market, ...item.best })), ...triangles.map((item) => ({ type: "triangle", route: item.route.join(" → "), ...item.best }))];
   const best = candidates.sort((a,b) => b.netProfitUsd-a.netProfitUsd)[0] ?? null;
-  data.history.push({ timestamp, status: eligible.length ? "ok" : "insufficient_pools", poolsChecked: pools.length, eligiblePools: eligible.length, marketsChecked: direct.length, triangularRoutesChecked: triangles.length, newPoolsFound: newPools.length, warnings, direct: direct.slice(0,10), triangles: triangles.slice(0,10), best, opportunity: Boolean(best && best.netProfitUsd >= config.minimumEstimatedProfitUsd) });
+  const verifier = new LiveQuoteVerifier(config.rpcUrl);
+  const costs = { flashLoanFeePercent: config.flashLoanFeePercent, estimatedGasUsd: config.estimatedGasUsd, safetyMarginPercent: config.safetyMarginPercent };
+  const liveQuotes = [];
+  for (const item of direct.filter((candidate) => candidate.best.netProfitUsd >= -0.5).slice(0, 3)) {
+    for (const estimate of item.estimates.filter((candidate) => candidate.netProfitUsd >= -0.5)) {
+      const quote = await verifier.verifyDirect(item, estimate.tradeSizeUsd, costs);
+      liveQuotes.push({ type: "direct", route: item.market, screeningNetProfitUsd: estimate.netProfitUsd, ...quote });
+    }
+  }
+  for (const item of triangles.filter((candidate) => candidate.best.netProfitUsd >= -0.5).slice(0, 3)) {
+    for (const estimate of item.estimates.filter((candidate) => candidate.netProfitUsd >= -0.5)) {
+      const quote = await verifier.verifyTriangle(item, estimate.tradeSizeUsd, tokenBySymbol, costs);
+      liveQuotes.push({ type: "triangle", route: item.route.join(" → "), screeningNetProfitUsd: estimate.netProfitUsd, ...quote });
+    }
+  }
+  const verified = liveQuotes.filter((quote) => quote.status === "verified").sort((a,b) => b.netProfitUsd-a.netProfitUsd);
+  const bestVerified = verified[0] ?? null;
+  data.history.push({ timestamp, status: eligible.length ? "ok" : "insufficient_pools", poolsChecked: pools.length, eligiblePools: eligible.length, marketsChecked: direct.length, triangularRoutesChecked: triangles.length, newPoolsFound: newPools.length, warnings, direct: direct.slice(0,10), triangles: triangles.slice(0,10), liveQuotes, best, bestVerified, screeningOpportunity: Boolean(best && best.netProfitUsd >= config.minimumEstimatedProfitUsd), opportunity: Boolean(bestVerified && bestVerified.netProfitUsd >= config.minimumEstimatedProfitUsd) });
 } catch (error) {
   data.history.push({ timestamp, status: "error", message: error.message, opportunity: false });
 }
