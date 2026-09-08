@@ -34,7 +34,7 @@
   <section id="coverage" class="grid"></section>
   <h2>Recent scans</h2>
   <div class="card table-wrap"><table>
-    <thead><tr><th>Time</th><th>Best route</th><th>Best size</th><th>Est. net</th><th>Signal</th></tr></thead>
+    <thead><tr><th>Time</th><th>Best route</th><th>Best size</th><th>Net</th><th>Check</th><th>Signal</th></tr></thead>
     <tbody id="rows"></tbody>
   </table></div>
   <script>
@@ -44,21 +44,21 @@
       const history=[...data.history].reverse(); const latest=history[0];
       document.querySelector("#updated").textContent=`Last scan: ${new Date(data.generatedAt).toLocaleString()}`;
       const opportunities=history.filter(x=>x.opportunity);
-      const best=history.map(x=>x.best).filter(Boolean).sort((a,b)=>b.netProfitUsd-a.netProfitUsd)[0];
+      const best=history.map(x=>x.bestVerified).filter(Boolean).sort((a,b)=>b.netProfitUsd-a.netProfitUsd)[0];
       document.querySelector("#summary").innerHTML=`
         <div class="card"><span class="muted">Scans</span><span class="value">${history.length}</span></div>
         <div class="card"><span class="muted">Signals</span><span class="value">${opportunities.length}</span></div>
         <div class="card"><span class="muted">Latest pools</span><span class="value">${latest?.poolsChecked ?? 0}</span></div>
-        <div class="card"><span class="muted">Best estimate</span><span class="value ${(best?.netProfitUsd??0)>=0?'positive':'negative'}">${money(best?.netProfitUsd)}</span></div>`;
+        <div class="card"><span class="muted">Best verified</span><span class="value ${(best?.netProfitUsd??0)>=0?'positive':'negative'}">${best?money(best.netProfitUsd):"—"}</span></div>`;
       document.querySelector("#coverage").innerHTML=`
         <div class="card"><span class="muted">Direct markets</span><span class="value">${latest?.marketsChecked ?? 0}</span></div>
         <div class="card"><span class="muted">Triangle routes</span><span class="value">${latest?.triangularRoutesChecked ?? 0}</span></div>
         <div class="card"><span class="muted">New pools (7 days)</span><span class="value">${latest?.newPoolsFound ?? 0}</span></div>
         <div class="card"><span class="muted">Sizes tested</span><span class="value">${data.config?.tradeSizesUsd?.length ?? 0}</span></div>`;
-      document.querySelector("#rows").innerHTML=history.slice(0,100).map(x=>`<tr>
-        <td>${new Date(x.timestamp).toLocaleString()}</td><td>${x.best?.route??"—"}</td><td>${x.best?money(x.best.tradeSizeUsd):"—"}</td>
-        <td class="${(x.best?.netProfitUsd??-1)>=0?'positive':'negative'}">${x.best?money(x.best.netProfitUsd):"—"}</td>
-        <td>${x.opportunity?"YES":"No"}</td></tr>`).join("");
+      document.querySelector("#rows").innerHTML=history.slice(0,100).map(x=>{const result=x.bestVerified??x.best; return `<tr>
+        <td>${new Date(x.timestamp).toLocaleString()}</td><td>${result?.route??"—"}</td><td>${result?money(result.tradeSizeUsd):"—"}</td>
+        <td class="${(result?.netProfitUsd??-1)>=0?'positive':'negative'}">${result?money(result.netProfitUsd):"—"}</td><td>${x.bestVerified?"VERIFIED":"Screen only"}</td>
+        <td>${x.opportunity?"YES":"No"}</td></tr>`}).join("");
     }).catch(()=>document.querySelector("#updated").textContent="No scan data yet.");
   </script>
 </main></body></html>
