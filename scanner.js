@@ -55,7 +55,7 @@ function bestDirectedEdges(pools) {
   for (const pool of pools) {
     for (const direction of [{ from: pool.base.symbol, to: pool.quote.symbol, rate: pool.rate }, { from: pool.quote.symbol, to: pool.base.symbol, rate: 1 / pool.rate }]) {
       const key = `${direction.from}>${direction.to}`;
-      const candidate = { ...direction, dex: pool.dex, pairAddress: pool.pairAddress, url: pool.url, liquidityUsd: pool.liquidityUsd };
+      const candidate = { ...direction, dex: pool.dex, pairAddress: pool.pairAddress, url: pool.url, liquidityUsd: pool.liquidityUsd, base: pool.base, quote: pool.quote };
       if (!edges.has(key) || candidate.rate > edges.get(key).rate) edges.set(key, candidate);
     }
   }

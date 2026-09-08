@@ -15,7 +15,7 @@ Every five minutes, GitHub Actions fetches public pool data for configured Base 
 
 The scanner tolerates one failed market-data request and records a warning instead of throwing away the whole scan. Its workflow also retries a rebased push if two runs finish close together.
 
-For positive and near-positive Aerodrome candidates, version 2.1 calls the exact pool contracts through Base's public RPC and chains the returned token amounts through the complete route. Only an on-chain result above the configured profit threshold counts as a verified signal. Unsupported DEX pool types remain clearly marked as screening-only.
+For positive and near-positive Aerodrome and Uniswap V3 candidates, version 3 calls the exact pool or quoter contracts through Base's public RPC and chains the returned token amounts through the complete route. Only an on-chain result above the configured profit threshold counts as a verified signal. Unsupported DEX pool types remain clearly marked as screening-only. Eleven trade sizes from $40 through $5,000 are tested so the scanner can identify where extra size stops helping and price impact takes over.
 
 ## Important limitation
 
