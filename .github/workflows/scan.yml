@@ -2,8 +2,7 @@ name: Paper arbitrage scan
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "3,13,23,33,43,53 * * * *"
+  
 
 permissions:
   contents: write
@@ -22,7 +21,7 @@ jobs:
         with:
           node-version: 24
       - run: npm ci
-      - run: npm test
+      - run: np
       - run: npm run scan
       - name: Save scan result
         run: |
