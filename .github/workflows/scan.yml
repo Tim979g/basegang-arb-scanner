@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 24
       - run: npm ci
-      - run: np
+      - run: npm test
       - run: npm run scan
       - name: Save scan result
         run: |
