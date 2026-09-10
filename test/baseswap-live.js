@@ -6,13 +6,13 @@ import {
 } from "ethers";
 
 const BASESWAP_ROUTER =
-  "0x327Df1E6de05895d2ab08513aaDD9313Fe505d86";
+  "0x327df1e6de05895d2ab08513aadd9313fe505d86";
 
 const WETH =
   "0x4200000000000000000000000000000000000006";
 
 const USDBC =
-  "0xd9AAEC86B65D86f6A7B5B1b0c42FFA531710b6CA";
+  "0xd9aaec86b65d86f6a7b5b1b0c42ffa531710b6ca";
 
 const ROUTER_ABI = [
   "function getAmountsOut(uint256 amountIn, address[] path) view returns (uint256[] amounts)"
