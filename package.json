@@ -5,9 +5,11 @@
   "type": "module",
   "description": "Read-only multi-market and triangular paper arbitrage scanner for Base",
   "scripts": {
-    "scan": "node scanner.js",
-    "test": "node --test"
-  },
+  "scan": "node scanner.js",
+  "test": "node --test",
+  "test:baseswap": "node test/baseswap-live.js"
+},
+  
   "dependencies": {
     "ethers": "^6.15.0"
   },
