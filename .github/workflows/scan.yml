@@ -24,6 +24,7 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run test:baseswap
+      - run: npm run test:slipstream
       - run: npm run scan
       - name: Save scan result
         run: |
