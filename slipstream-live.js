@@ -1,4 +1,4 @@
-const { JsonRpcProvider, Contract, parseUnits, formatUnits } = require("ethers");
+import { JsonRpcProvider, Contract, parseUnits, formatUnits } from "ethers";
 
 const RPC_URL = "https://mainnet.base.org";
 
