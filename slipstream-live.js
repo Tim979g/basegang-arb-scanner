@@ -5,7 +5,7 @@ const RPC_URL = "https://mainnet.base.org";
 const provider = new JsonRpcProvider(RPC_URL);
 
 // Base tokens
-const USDC = "0x833589fCD6EDb6E08f4c7C32D4f71b54bDa02913";
+const USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
 const WETH = "0x4200000000000000000000000000000000000006";
 
 // Aerodrome Slipstream Quoter
