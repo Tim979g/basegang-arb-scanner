@@ -6,7 +6,7 @@
   "description": "Read-only multi-market and triangular paper arbitrage scanner for Base",
   "scripts": {
   "scan": "node scanner.js",
-  "test": "node --test",
+  "test": "node --test test/*.test.js",
   "test:baseswap": "node scripts/baseswap-live.js"
 },
   
