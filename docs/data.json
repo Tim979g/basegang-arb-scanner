@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T14:26:00.472Z",
+  "generatedAt": "2026-09-10T14:31:05.583Z",
   "config": {
     "chain": "base",
     "rpcUrl": "https://mainnet.base.org",
@@ -449197,6 +449197,3240 @@
         "safetyMarginUsd": 0.04,
         "netProfitUsd": -1.6446170000000015
       },
+      "screeningOpportunity": true,
+      "opportunity": false
+    },
+    {
+      "timestamp": "2026-09-10T14:31:05.583Z",
+      "status": "ok",
+      "poolsChecked": 134,
+      "eligiblePools": 89,
+      "marketsChecked": 4,
+      "triangularRoutesChecked": 30,
+      "newPoolsFound": 0,
+      "warnings": [],
+      "direct": [
+        {
+          "market": "WETH/USDC",
+          "buy": {
+            "dex": "0x0e5Ab24beBdA7e5Bb3961f7E9b3532a83aE86B48",
+            "pairAddress": "0x966617c62D5053fcEed8fD051c0319ca2B5EfD65",
+            "url": "https://dexscreener.com/base/0x966617c62d5053fceed8fd051c0319ca2b5efd65",
+            "base": {
+              "symbol": "WETH",
+              "address": "0x4200000000000000000000000000000000000006"
+            },
+            "quote": {
+              "symbol": "USDC",
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "stable": true
+            },
+            "rate": 2428.4365,
+            "basePriceUsd": 2428.43,
+            "liquidityUsd": 46425.69,
+            "pairCreatedAt": null,
+            "asset": "WETH",
+            "stable": "USDC",
+            "assetPriceUsd": 2428.43
+          },
+          "sell": {
+            "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+            "pairAddress": "0x7877B97C887DD3A3a1CEa35822DA07e11a25e7da",
+            "url": "https://dexscreener.com/base/0x7877b97c887dd3a3a1cea35822da07e11a25e7da",
+            "base": {
+              "symbol": "WETH",
+              "address": "0x4200000000000000000000000000000000000006"
+            },
+            "quote": {
+              "symbol": "USDC",
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "stable": true
+            },
+            "rate": 2477.9395,
+            "basePriceUsd": 2477.93,
+            "liquidityUsd": 412349.32,
+            "pairCreatedAt": null,
+            "asset": "WETH",
+            "stable": "USDC",
+            "assetPriceUsd": 2477.93
+          },
+          "estimates": [
+            {
+              "tradeSizeUsd": 150,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 0.6420450933950895,
+              "estimatedSellImpactPercent": 0.07348487509903101,
+              "saleProceedsUsd": 151.05266981269128,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": 0.5776698126912777
+            },
+            {
+              "tradeSizeUsd": 100,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 0.428948075620972,
+              "estimatedSellImpactPercent": 0.0491069645187297,
+              "saleProceedsUsd": 100.94237878141317,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": 0.5423787814131685
+            },
+            {
+              "tradeSizeUsd": 80,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 0.34345310759591624,
+              "estimatedSellImpactPercent": 0.03932315231097328,
+              "saleProceedsUsd": 80.83115245169601,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": 0.4611524516960133
+            },
+            {
+              "tradeSizeUsd": 60,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 0.257811195837896,
+              "estimatedSellImpactPercent": 0.029520603731566276,
+              "saleProceedsUsd": 60.68141236038357,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": 0.3414123603835682
+            },
+            {
+              "tradeSizeUsd": 40,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 0.17202196118367452,
+              "estimatedSellImpactPercent": 0.019699264907630343,
+              "saleProceedsUsd": 40.493047768468756,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": 0.18304776846875595
+            },
+            {
+              "tradeSizeUsd": 250,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 1.0655144335650684,
+              "estimatedSellImpactPercent": 0.12189371784573112,
+              "saleProceedsUsd": 250.5600164548061,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -0.06498354519391114
+            },
+            {
+              "tradeSizeUsd": 400,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 1.6939932481664108,
+              "estimatedSellImpactPercent": 0.19365179531549576,
+              "saleProceedsUsd": 398.0631477838925,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -2.786852216107525
+            },
+            {
+              "tradeSizeUsd": 650,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 2.723899853517047,
+              "estimatedSellImpactPercent": 0.31102118421348224,
+              "saleProceedsUsd": 639.3231284728803,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -11.901871527119715
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 4.130039241567854,
+              "estimatedSellImpactPercent": 0.4708214978704413,
+              "saleProceedsUsd": 967.8024785739657,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -33.947521426034314
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 7.932464583032973,
+              "estimatedSellImpactPercent": 0.9003922829855163,
+              "saleProceedsUsd": 1850.8115859272912,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -152.43841407270884
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "rawSpreadPercent": 2.0383539982622434,
+              "estimatedBuyImpactPercent": 17.722423952635758,
+              "estimatedSellImpactPercent": 1.9895155788436754,
+              "saleProceedsUsd": 4089.5713493869957,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -918.1786506130043
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 150,
+            "rawSpreadPercent": 2.0383539982622434,
+            "estimatedBuyImpactPercent": 0.6420450933950895,
+            "estimatedSellImpactPercent": 0.07348487509903101,
+            "saleProceedsUsd": 151.05266981269128,
+            "flashLoanFeeUsd": 0.075,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.15,
+            "netProfitUsd": 0.5776698126912777
+          }
+        },
+        {
+          "market": "cbBTC/USDC",
+          "buy": {
+            "dex": "uniswap",
+            "pairAddress": "0x179492f1f9c7b2e2518a01eda215baab8adf0b02dd3a90fe68059c0cac5686f5",
+            "url": "https://dexscreener.com/base/0x179492f1f9c7b2e2518a01eda215baab8adf0b02dd3a90fe68059c0cac5686f5",
+            "base": {
+              "symbol": "cbBTC",
+              "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+            },
+            "quote": {
+              "symbol": "USDC",
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "stable": true
+            },
+            "rate": 77087.9234,
+            "basePriceUsd": 77087.92,
+            "liquidityUsd": 2335767.81,
+            "pairCreatedAt": 1738188225000,
+            "asset": "cbBTC",
+            "stable": "USDC",
+            "assetPriceUsd": 77087.92
+          },
+          "sell": {
+            "dex": "uniswap",
+            "pairAddress": "0x12d76c5c8ec8edffd3c143995b0aa43fe44a6d71eb9113796272909e54b8e078",
+            "url": "https://dexscreener.com/base/0x12d76c5c8ec8edffd3c143995b0aa43fe44a6d71eb9113796272909e54b8e078",
+            "base": {
+              "symbol": "cbBTC",
+              "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+            },
+            "quote": {
+              "symbol": "USDC",
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "stable": true
+            },
+            "rate": 77286.2725,
+            "basePriceUsd": 77286.27,
+            "liquidityUsd": 3290088.41,
+            "pairCreatedAt": 1738188351000,
+            "asset": "cbBTC",
+            "stable": "USDC",
+            "assetPriceUsd": 77286.27
+          },
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.003424880664635424,
+              "estimatedSellImpactPercent": 0.002430346340734242,
+              "saleProceedsUsd": 39.860330824759174,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.4496691752408259
+            },
+            {
+              "tradeSizeUsd": 60,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.005137233024902852,
+              "estimatedSellImpactPercent": 0.003645412789021479,
+              "saleProceedsUsd": 59.78874587862434,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.5512541213756601
+            },
+            {
+              "tradeSizeUsd": 80,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.006849526741153872,
+              "estimatedSellImpactPercent": 0.004860408097586613,
+              "saleProceedsUsd": 79.71599416345325,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -0.6540058365467541
+            },
+            {
+              "tradeSizeUsd": 100,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.008561761816401057,
+              "estimatedSellImpactPercent": 0.006075332272677098,
+              "saleProceedsUsd": 99.64207578171089,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -0.7579242182891136
+            },
+            {
+              "tradeSizeUsd": 150,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.012842092969895424,
+              "estimatedSellImpactPercent": 0.009112331542444004,
+              "saleProceedsUsd": 149.45217633342415,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -1.0228236665758514
+            },
+            {
+              "tradeSizeUsd": 250,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.02140165600278506,
+              "estimatedSellImpactPercent": 0.015184996836759506,
+              "saleProceedsUsd": 249.0505107610679,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -1.5744892389321024
+            },
+            {
+              "tradeSizeUsd": 400,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.03423825307256972,
+              "estimatedSellImpactPercent": 0.024290663128105273,
+              "saleProceedsUsd": 398.3933697065326,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -2.45663029346739
+            },
+            {
+              "tradeSizeUsd": 650,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.055625258045037214,
+              "estimatedSellImpactPercent": 0.03945789570997085,
+              "saleProceedsUsd": 647.1525273114438,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -4.0724726885561955
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.08555169557236739,
+              "estimatedSellImpactPercent": 0.06067339816574597,
+              "saleProceedsUsd": 995.1099078406738,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -6.640092159326173
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.17095713441753863,
+              "estimatedSellImpactPercent": 0.12116967875084798,
+              "saleProceedsUsd": 1987.3148941724176,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -15.935105827582447
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "rawSpreadPercent": 0.25730360865878765,
+              "estimatedBuyImpactPercent": 0.4262996515413859,
+              "estimatedSellImpactPercent": 0.3016035368258157,
+              "saleProceedsUsd": 4946.626970114237,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -61.12302988576266
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "rawSpreadPercent": 0.25730360865878765,
+            "estimatedBuyImpactPercent": 0.003424880664635424,
+            "estimatedSellImpactPercent": 0.002430346340734242,
+            "saleProceedsUsd": 39.860330824759174,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.4496691752408259
+          }
+        },
+        {
+          "market": "WETH/USDbC",
+          "buy": {
+            "dex": "shark-swap",
+            "pairAddress": "0x9ccc7afE654B9C842A792E9567A30031c1943A1D",
+            "url": "https://dexscreener.com/base/0x9ccc7afe654b9c842a792e9567a30031c1943a1d",
+            "base": {
+              "symbol": "WETH",
+              "address": "0x4200000000000000000000000000000000000006"
+            },
+            "quote": {
+              "symbol": "USDbC",
+              "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+              "stable": true
+            },
+            "rate": 2434.6569,
+            "basePriceUsd": 2434.65,
+            "liquidityUsd": 61394.61,
+            "pairCreatedAt": 1698112573000,
+            "asset": "WETH",
+            "stable": "USDbC",
+            "assetPriceUsd": 2434.65
+          },
+          "sell": {
+            "dex": "uniswap",
+            "pairAddress": "0x4C36388bE6F416A29C8d8Eee81C771cE6bE14B18",
+            "url": "https://dexscreener.com/base/0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
+            "base": {
+              "symbol": "WETH",
+              "address": "0x4200000000000000000000000000000000000006"
+            },
+            "quote": {
+              "symbol": "USDbC",
+              "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+              "stable": true
+            },
+            "rate": 2439.7154,
+            "basePriceUsd": 2439.71,
+            "liquidityUsd": 48738.73,
+            "pairCreatedAt": 1691013975000,
+            "asset": "WETH",
+            "stable": "USDbC",
+            "assetPriceUsd": 2439.71
+          },
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 0.1301350264767845,
+              "estimatedSellImpactPercent": 0.1635070134408161,
+              "saleProceedsUsd": 39.726084043273566,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.5839159567264338
+            },
+            {
+              "tradeSizeUsd": 60,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 0.19507560886755196,
+              "estimatedSellImpactPercent": 0.24490121425084313,
+              "saleProceedsUsd": 59.50182817784931,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.8381718221506882
+            },
+            {
+              "tradeSizeUsd": 80,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 0.2599317906489863,
+              "estimatedSellImpactPercent": 0.3260572794193828,
+              "saleProceedsUsd": 79.21971426518695,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -1.1502857348130489
+            },
+            {
+              "tradeSizeUsd": 100,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 0.32470373625224674,
+              "estimatedSellImpactPercent": 0.40697625249280567,
+              "saleProceedsUsd": 98.87999584799353,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -1.520004152006473
+            },
+            {
+              "tradeSizeUsd": 150,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 0.48626614221242337,
+              "estimatedSellImpactPercent": 0.6082432007148272,
+              "saleProceedsUsd": 147.78033065286922,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -2.6946693471307754
+            },
+            {
+              "tradeSizeUsd": 250,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 0.8078247847429687,
+              "estimatedSellImpactPercent": 1.006414974933172,
+              "saleProceedsUsd": 244.5211678401548,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -6.103832159845211
+            },
+            {
+              "tradeSizeUsd": 400,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 1.286285097695765,
+              "estimatedSellImpactPercent": 1.593001151002355,
+              "saleProceedsUsd": 387.03965214713907,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -13.810347852860934
+            },
+            {
+              "tradeSizeUsd": 650,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 2.0735434832436153,
+              "estimatedSellImpactPercent": 2.5431865527995243,
+              "saleProceedsUsd": 617.8991384415859,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -33.32586155841407
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 3.1548423438522613,
+              "estimatedSellImpactPercent": 3.818747588999822,
+              "saleProceedsUsd": 927.8127247768903,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -73.93727522310974
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 6.116712065413342,
+              "estimatedSellImpactPercent": 7.147657993969693,
+              "saleProceedsUsd": 1736.6133489056463,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -266.63665109435374
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "rawSpreadPercent": 0.2078327480335984,
+              "estimatedBuyImpactPercent": 14.006659606376449,
+              "estimatedSellImpactPercent": 14.985770045213778,
+              "saleProceedsUsd": 3640.981189377674,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -1366.7688106223259
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "rawSpreadPercent": 0.2078327480335984,
+            "estimatedBuyImpactPercent": 0.1301350264767845,
+            "estimatedSellImpactPercent": 0.1635070134408161,
+            "saleProceedsUsd": 39.726084043273566,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.5839159567264338
+          }
+        },
+        {
+          "market": "AERO/USDC",
+          "buy": {
+            "dex": "aerodrome",
+            "pairAddress": "0x861Ee8B9F7e42eDCF4f1B5614c6595F71A879f3f",
+            "url": "https://dexscreener.com/base/0x861ee8b9f7e42edcf4f1b5614c6595f71a879f3f",
+            "base": {
+              "symbol": "AERO",
+              "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+            },
+            "quote": {
+              "symbol": "USDC",
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "stable": true
+            },
+            "rate": 0.5412,
+            "basePriceUsd": 0.5412,
+            "liquidityUsd": 12734.6,
+            "pairCreatedAt": 1703890309000,
+            "asset": "AERO",
+            "stable": "USDC",
+            "assetPriceUsd": 0.5412
+          },
+          "sell": {
+            "dex": "uniswap",
+            "pairAddress": "0xe268e533bf3b4df49b2951ce7b39345f814e7eb93415eda1d39a9c3a57662ec8",
+            "url": "https://dexscreener.com/base/0xe268e533bf3b4df49b2951ce7b39345f814e7eb93415eda1d39a9c3a57662ec8",
+            "base": {
+              "symbol": "AERO",
+              "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+            },
+            "quote": {
+              "symbol": "USDC",
+              "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+              "stable": true
+            },
+            "rate": 0.5471,
+            "basePriceUsd": 0.5471,
+            "liquidityUsd": 11574.33,
+            "pairCreatedAt": 1738188939000,
+            "asset": "AERO",
+            "stable": "USDC",
+            "assetPriceUsd": 0.5471
+          },
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 0.624287921589437,
+              "estimatedSellImpactPercent": 0.6875152142608346,
+              "saleProceedsUsd": 39.668276929829894,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.6417230701701064
+            },
+            {
+              "tradeSizeUsd": 60,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 0.9335179624414606,
+              "estimatedSellImpactPercent": 1.0245746082237972,
+              "saleProceedsUsd": 59.115941656636664,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -1.2240583433633356
+            },
+            {
+              "tradeSizeUsd": 80,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 1.2408294945170846,
+              "estimatedSellImpactPercent": 1.357283792796154,
+              "saleProceedsUsd": 78.31260784954945,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -2.057392150450549
+            },
+            {
+              "tradeSizeUsd": 100,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 1.546240316670017,
+              "estimatedSellImpactPercent": 1.6857264460316566,
+              "saleProceedsUsd": 97.26310356784646,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -3.136896432153543
+            },
+            {
+              "tradeSizeUsd": 150,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 2.3015665996655055,
+              "estimatedSellImpactPercent": 2.488697081990203,
+              "saleProceedsUsd": 143.59293146550343,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -6.882068534496574
+            },
+            {
+              "tradeSizeUsd": 250,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 3.7779759116255875,
+              "estimatedSellImpactPercent": 4.020954367688687,
+              "saleProceedsUsd": 232.00116604135246,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -18.623833958647538
+            },
+            {
+              "tradeSizeUsd": 400,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 5.910776823844074,
+              "estimatedSellImpactPercent": 6.151292655585782,
+              "saleProceedsUsd": 354.91749924479603,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -45.93250075520397
+            },
+            {
+              "tradeSizeUsd": 650,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 9.262821883060436,
+              "estimatedSellImpactPercent": 9.31479467767717,
+              "saleProceedsUsd": 537.4453497961708,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -113.77965020382918
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 13.57349368153869,
+              "estimatedSellImpactPercent": 13.082543481347894,
+              "saleProceedsUsd": 754.8370523299599,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -246.91294767004013
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 23.90257311199551,
+              "estimatedSellImpactPercent": 20.952136864747892,
+              "saleProceedsUsd": 1208.897127194621,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -794.3528728053791
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "rawSpreadPercent": 1.0901699926090247,
+              "estimatedBuyImpactPercent": 43.98581897196344,
+              "estimatedSellImpactPercent": 32.78485945930096,
+              "saleProceedsUsd": 1891.6219701920704,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -3116.1280298079296
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "rawSpreadPercent": 1.0901699926090247,
+            "estimatedBuyImpactPercent": 0.624287921589437,
+            "estimatedSellImpactPercent": 0.6875152142608346,
+            "saleProceedsUsd": 39.668276929829894,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.6417230701701064
+          }
+        }
+      ],
+      "triangles": [
+        {
+          "route": [
+            "USDC",
+            "cbBTC",
+            "WETH",
+            "USDC"
+          ],
+          "edges": [
+            {
+              "from": "USDC",
+              "to": "cbBTC",
+              "rate": 0.000012972200519802821,
+              "dex": "uniswap",
+              "pairAddress": "0x179492f1f9c7b2e2518a01eda215baab8adf0b02dd3a90fe68059c0cac5686f5",
+              "url": "https://dexscreener.com/base/0x179492f1f9c7b2e2518a01eda215baab8adf0b02dd3a90fe68059c0cac5686f5",
+              "liquidityUsd": 2335767.81,
+              "base": {
+                "symbol": "cbBTC",
+                "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            },
+            {
+              "from": "cbBTC",
+              "to": "WETH",
+              "rate": 31.737,
+              "dex": "aerodrome",
+              "pairAddress": "0x2578365B3dfA7FfE60108e181EFb79FeDdec2319",
+              "url": "https://dexscreener.com/base/0x2578365b3dfa7ffe60108e181efb79feddec2319",
+              "liquidityUsd": 864260.29,
+              "base": {
+                "symbol": "cbBTC",
+                "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+              },
+              "quote": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "USDC",
+              "rate": 2477.9395,
+              "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+              "pairAddress": "0x7877B97C887DD3A3a1CEa35822DA07e11a25e7da",
+              "url": "https://dexscreener.com/base/0x7877b97c887dd3a3a1cea35822da07e11a25e7da",
+              "liquidityUsd": 412349.32,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": 0.5759763702783305,
+              "estimatedImpactPercentByHop": [
+                0.055625258045037214,
+                0.1501917330334089,
+                0.314275870198457
+              ],
+              "finalAmountUsd": 653.7438464068091,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": 2.518846406809098
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": 0.7774584116754246,
+              "estimatedImpactPercentByHop": [
+                0.03423825307256972,
+                0.09247910339289761,
+                0.19363459196786284
+              ],
+              "finalAmountUsd": 403.1098336467017,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": 2.259833646701702
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": 0.8986306306845826,
+              "estimatedImpactPercentByHop": [
+                0.02140165600278506,
+                0.05781949122571296,
+                0.12110956123168616
+              ],
+              "finalAmountUsd": 252.24657657671145,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": 1.6215765767114476
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": 0.2948881020208072,
+              "estimatedImpactPercentByHop": [
+                0.08555169557236739,
+                0.23087748833552094,
+                0.4826845136369477
+              ],
+              "finalAmountUsd": 1002.948881020208,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": 1.1988810202079776
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": 0.9795303343041795,
+              "estimatedImpactPercentByHop": [
+                0.012842092969895424,
+                0.03469972001605579,
+                0.07270095586247421
+              ],
+              "finalAmountUsd": 151.46929550145626,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": 0.9942955014562586
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": 1.0200157093600337,
+              "estimatedImpactPercentByHop": [
+                0.008561761816401057,
+                0.023135822699270545,
+                0.048479052153085594
+              ],
+              "finalAmountUsd": 101.02001570936004,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": 0.6200157093600381
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": 1.0362164963174436,
+              "estimatedImpactPercentByHop": [
+                0.006849526741153872,
+                0.01850951462511367,
+                0.038787002436696465
+              ],
+              "finalAmountUsd": 80.82897319705395,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": 0.45897319705395484
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": 1.0524210776044374,
+              "estimatedImpactPercentByHop": [
+                0.005137233024902852,
+                0.013882778377558795,
+                0.029093072910246997
+              ],
+              "finalAmountUsd": 60.631452646562664,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": 0.2914526465626642
+            },
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": 1.068629454418768,
+              "estimatedImpactPercentByHop": [
+                0.003424880664635424,
+                0.009255613897160803,
+                0.019397263026789655
+              ],
+              "finalAmountUsd": 40.42745178176751,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": 0.11745178176750895
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -0.5019317553077829,
+              "estimatedImpactPercentByHop": [
+                0.17095713441753863,
+                0.4606913440668811,
+                0.9607317240244322
+              ],
+              "finalAmountUsd": 1989.9613648938443,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -13.288635106155652
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -2.8377339230072685,
+              "estimatedImpactPercentByHop": [
+                0.4262996515413859,
+                1.1438241121531438,
+                2.367708322579991
+              ],
+              "finalAmountUsd": 4858.113303849636,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -149.6366961503636
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 650,
+            "grossReturnPercent": 0.5759763702783305,
+            "estimatedImpactPercentByHop": [
+              0.055625258045037214,
+              0.1501917330334089,
+              0.314275870198457
+            ],
+            "finalAmountUsd": 653.7438464068091,
+            "flashLoanFeeUsd": 0.325,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.65,
+            "netProfitUsd": 2.518846406809098
+          }
+        },
+        {
+          "route": [
+            "USDC",
+            "AERO",
+            "WETH",
+            "USDC"
+          ],
+          "edges": [
+            {
+              "from": "USDC",
+              "to": "AERO",
+              "rate": 1.8477457501847745,
+              "dex": "aerodrome",
+              "pairAddress": "0x861Ee8B9F7e42eDCF4f1B5614c6595F71A879f3f",
+              "url": "https://dexscreener.com/base/0x861ee8b9f7e42edcf4f1b5614c6595f71a879f3f",
+              "liquidityUsd": 12734.6,
+              "base": {
+                "symbol": "AERO",
+                "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            },
+            {
+              "from": "AERO",
+              "to": "WETH",
+              "rate": 0.0002244,
+              "dex": "aerodrome",
+              "pairAddress": "0x7f670f78B17dEC44d5Ef68a48740b6f8849cc2e6",
+              "url": "https://dexscreener.com/base/0x7f670f78b17dec44d5ef68a48740b6f8849cc2e6",
+              "liquidityUsd": 2798579.78,
+              "base": {
+                "symbol": "AERO",
+                "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+              },
+              "quote": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "USDC",
+              "rate": 2477.9395,
+              "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+              "pairAddress": "0x7877B97C887DD3A3a1CEa35822DA07e11a25e7da",
+              "url": "https://dexscreener.com/base/0x7877b97c887dd3a3a1cea35822da07e11a25e7da",
+              "liquidityUsd": 412349.32,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": 0.8377135280773995,
+              "estimatedImpactPercentByHop": [
+                0.9335179624414606,
+                0.004287705342943216,
+                0.029093072910246997
+              ],
+              "finalAmountUsd": 60.50262811684644,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": 0.1626281168464379
+            },
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": 1.1637286341523723,
+              "estimatedImpactPercentByHop": [
+                0.624287921589437,
+                0.002858511083472962,
+                0.019397263026789655
+              ],
+              "finalAmountUsd": 40.46549145366095,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": 0.15549145366095243
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": 0.5137232783054779,
+              "estimatedImpactPercentByHop": [
+                1.2408294945170846,
+                0.005716858749904931,
+                0.038787002436696465
+              ],
+              "finalAmountUsd": 80.41097862264438,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": 0.040978622644378807
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": 0.19173909870704442,
+              "estimatedImpactPercentByHop": [
+                1.546240316670017,
+                0.007145971306109694,
+                0.048479052153085594
+              ],
+              "finalAmountUsd": 100.19173909870705,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -0.2082609012929538
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -0.6045659964459382,
+              "estimatedImpactPercentByHop": [
+                2.3015665996655055,
+                0.010718573986053807,
+                0.07270095586247421
+              ],
+              "finalAmountUsd": 149.0931510053311,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -1.3818489946689054
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -2.1610348096822385,
+              "estimatedImpactPercentByHop": [
+                3.7779759116255875,
+                0.01786301353654164,
+                0.12110956123168616
+              ],
+              "finalAmountUsd": 244.5974129757944,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -6.027587024205587
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -4.409390173157579,
+              "estimatedImpactPercentByHop": [
+                5.910776823844074,
+                0.02857775874911835,
+                0.19363459196786284
+              ],
+              "finalAmountUsd": 382.3624393073697,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -18.4875606926303
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -7.942795438345507,
+              "estimatedImpactPercentByHop": [
+                9.262821883060436,
+                0.0464305649580426,
+                0.314275870198457
+              ],
+              "finalAmountUsd": 598.3718296507542,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -52.85317034924581
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -12.486190106186633,
+              "estimatedImpactPercentByHop": [
+                13.57349368153869,
+                0.07141378418435915,
+                0.4826845136369477
+              ],
+              "finalAmountUsd": 875.1380989381337,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -126.61190106186632
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -23.370085500358172,
+              "estimatedImpactPercentByHop": [
+                23.90257311199551,
+                0.14272564258634593,
+                0.9607317240244322
+              ],
+              "finalAmountUsd": 1532.5982899928365,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -470.6517100071635
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -44.51397165143428,
+              "estimatedImpactPercentByHop": [
+                43.98581897196344,
+                0.356051840549817,
+                2.367708322579991
+              ],
+              "finalAmountUsd": 2774.3014174282857,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -2233.4485825717143
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 60,
+            "grossReturnPercent": 0.8377135280773995,
+            "estimatedImpactPercentByHop": [
+              0.9335179624414606,
+              0.004287705342943216,
+              0.029093072910246997
+            ],
+            "finalAmountUsd": 60.50262811684644,
+            "flashLoanFeeUsd": 0.03,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.06,
+            "netProfitUsd": 0.1626281168464379
+          }
+        },
+        {
+          "route": [
+            "USDbC",
+            "WETH",
+            "USDC",
+            "USDbC"
+          ],
+          "edges": [
+            {
+              "from": "USDbC",
+              "to": "WETH",
+              "rate": 0.00041073549213443587,
+              "dex": "shark-swap",
+              "pairAddress": "0x9ccc7afE654B9C842A792E9567A30031c1943A1D",
+              "url": "https://dexscreener.com/base/0x9ccc7afe654b9c842a792e9567a30031c1943a1d",
+              "liquidityUsd": 61394.61,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDbC",
+                "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+                "stable": true
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "USDC",
+              "rate": 2477.9395,
+              "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+              "pairAddress": "0x7877B97C887DD3A3a1CEa35822DA07e11a25e7da",
+              "url": "https://dexscreener.com/base/0x7877b97c887dd3a3a1cea35822da07e11a25e7da",
+              "liquidityUsd": 412349.32,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            },
+            {
+              "from": "USDC",
+              "to": "USDbC",
+              "rate": 1.0006375,
+              "dex": "aerodrome",
+              "pairAddress": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
+              "url": "https://dexscreener.com/base/0x27a8afa3bd49406e48a074350fb7b2020c43b2bd",
+              "liquidityUsd": 33125.89,
+              "base": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              },
+              "quote": {
+                "symbol": "USDbC",
+                "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": 0.5351254695169505,
+              "estimatedImpactPercentByHop": [
+                0.1301350264767845,
+                0.019397263026789655,
+                0.24092111369398622
+              ],
+              "finalAmountUsd": 40.21405018780678,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.09594981219322335
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": 0.33913996730183804,
+              "estimatedImpactPercentByHop": [
+                0.19507560886755196,
+                0.029093072910246997,
+                0.36094687192913166
+              ],
+              "finalAmountUsd": 60.20348398038111,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.13651601961889184
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": 0.14372477559358998,
+              "estimatedImpactPercentByHop": [
+                0.2599317906489863,
+                0.038787002436696465,
+                0.4806841577617423
+              ],
+              "finalAmountUsd": 80.11497982047487,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -0.255020179525128
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": -0.051122352908661295,
+              "estimatedImpactPercentByHop": [
+                0.32470373625224674,
+                0.048479052153085594,
+                0.6001340099244161
+              ],
+              "finalAmountUsd": 99.94887764709134,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -0.45112235290866354
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -0.5357695439602739,
+              "estimatedImpactPercentByHop": [
+                0.48626614221242337,
+                0.07270095586247421,
+                0.897507889842275
+              ],
+              "finalAmountUsd": 149.1963456840596,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -1.278654315940406
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -1.494592674060713,
+              "estimatedImpactPercentByHop": [
+                0.8078247847429687,
+                0.12110956123168616,
+                1.4869494904075402
+              ],
+              "finalAmountUsd": 246.26351831484823,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -4.361481685151773
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -2.9071559297126903,
+              "estimatedImpactPercentByHop": [
+                1.286285097695765,
+                0.19363459196786284,
+                2.3580810997147017
+              ],
+              "finalAmountUsd": 388.37137628114925,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -12.478623718850747
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -5.195147491415774,
+              "estimatedImpactPercentByHop": [
+                2.0735434832436153,
+                0.314275870198457,
+                3.7762277169885805
+              ],
+              "finalAmountUsd": 616.2315413057975,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -34.99345869420254
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -8.2656555696898,
+              "estimatedImpactPercentByHop": [
+                3.1548423438522613,
+                0.4826845136369477,
+                5.693805907836072
+              ],
+              "finalAmountUsd": 917.343444303102,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -84.40655569689795
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -16.26605049840618,
+              "estimatedImpactPercentByHop": [
+                6.116712065413342,
+                0.9607317240244322,
+                10.774152484963997
+              ],
+              "finalAmountUsd": 1674.6789900318763,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -328.5710099681237
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -34.91169412338723,
+              "estimatedImpactPercentByHop": [
+                14.006659606376449,
+                2.367708322579991,
+                23.187927252052074
+              ],
+              "finalAmountUsd": 3254.415293830639,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -1753.3347061693612
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "grossReturnPercent": 0.5351254695169505,
+            "estimatedImpactPercentByHop": [
+              0.1301350264767845,
+              0.019397263026789655,
+              0.24092111369398622
+            ],
+            "finalAmountUsd": 40.21405018780678,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.09594981219322335
+          }
+        },
+        {
+          "route": [
+            "USDC",
+            "USDbC",
+            "WETH",
+            "USDC"
+          ],
+          "edges": [
+            {
+              "from": "USDC",
+              "to": "USDbC",
+              "rate": 1.0006375,
+              "dex": "aerodrome",
+              "pairAddress": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
+              "url": "https://dexscreener.com/base/0x27a8afa3bd49406e48a074350fb7b2020c43b2bd",
+              "liquidityUsd": 33125.89,
+              "base": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              },
+              "quote": {
+                "symbol": "USDbC",
+                "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+                "stable": true
+              }
+            },
+            {
+              "from": "USDbC",
+              "to": "WETH",
+              "rate": 0.00041073549213443587,
+              "dex": "shark-swap",
+              "pairAddress": "0x9ccc7afE654B9C842A792E9567A30031c1943A1D",
+              "url": "https://dexscreener.com/base/0x9ccc7afe654b9c842a792e9567a30031c1943a1d",
+              "liquidityUsd": 61394.61,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDbC",
+                "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+                "stable": true
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "USDC",
+              "rate": 2477.9395,
+              "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+              "pairAddress": "0x7877B97C887DD3A3a1CEa35822DA07e11a25e7da",
+              "url": "https://dexscreener.com/base/0x7877b97c887dd3a3a1cea35822da07e11a25e7da",
+              "liquidityUsd": 412349.32,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": 0.5351254695169283,
+              "estimatedImpactPercentByHop": [
+                0.24092111369398622,
+                0.1301350264767845,
+                0.019397263026789655
+              ],
+              "finalAmountUsd": 40.21405018780677,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.09594981219323045
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": 0.33913996730183804,
+              "estimatedImpactPercentByHop": [
+                0.36094687192913166,
+                0.19507560886755196,
+                0.029093072910246997
+              ],
+              "finalAmountUsd": 60.20348398038111,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.13651601961889184
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": 0.14372477559358998,
+              "estimatedImpactPercentByHop": [
+                0.4806841577617423,
+                0.2599317906489863,
+                0.038787002436696465
+              ],
+              "finalAmountUsd": 80.11497982047487,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -0.255020179525128
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": -0.051122352908661295,
+              "estimatedImpactPercentByHop": [
+                0.6001340099244161,
+                0.32470373625224674,
+                0.048479052153085594
+              ],
+              "finalAmountUsd": 99.94887764709134,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -0.45112235290866354
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -0.535769543960285,
+              "estimatedImpactPercentByHop": [
+                0.897507889842275,
+                0.48626614221242337,
+                0.07270095586247421
+              ],
+              "finalAmountUsd": 149.19634568405957,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -1.2786543159404344
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -1.4945926740607018,
+              "estimatedImpactPercentByHop": [
+                1.4869494904075402,
+                0.8078247847429687,
+                0.12110956123168616
+              ],
+              "finalAmountUsd": 246.26351831484826,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -4.361481685151745
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -2.9071559297126903,
+              "estimatedImpactPercentByHop": [
+                2.3580810997147017,
+                1.286285097695765,
+                0.19363459196786284
+              ],
+              "finalAmountUsd": 388.37137628114925,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -12.478623718850747
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -5.195147491415774,
+              "estimatedImpactPercentByHop": [
+                3.7762277169885805,
+                2.0735434832436153,
+                0.314275870198457
+              ],
+              "finalAmountUsd": 616.2315413057975,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -34.99345869420254
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -8.2656555696898,
+              "estimatedImpactPercentByHop": [
+                5.693805907836072,
+                3.1548423438522613,
+                0.4826845136369477
+              ],
+              "finalAmountUsd": 917.343444303102,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -84.40655569689795
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -16.266050498406194,
+              "estimatedImpactPercentByHop": [
+                10.774152484963997,
+                6.116712065413342,
+                0.9607317240244322
+              ],
+              "finalAmountUsd": 1674.678990031876,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -328.5710099681239
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -34.911694123387235,
+              "estimatedImpactPercentByHop": [
+                23.187927252052074,
+                14.006659606376449,
+                2.367708322579991
+              ],
+              "finalAmountUsd": 3254.4152938306383,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -1753.3347061693617
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "grossReturnPercent": 0.5351254695169283,
+            "estimatedImpactPercentByHop": [
+              0.24092111369398622,
+              0.1301350264767845,
+              0.019397263026789655
+            ],
+            "finalAmountUsd": 40.21405018780677,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.09594981219323045
+          }
+        },
+        {
+          "route": [
+            "USDC",
+            "DAI",
+            "WETH",
+            "USDC"
+          ],
+          "edges": [
+            {
+              "from": "USDC",
+              "to": "DAI",
+              "rate": 1.0018032458425166,
+              "dex": "uniswap",
+              "pairAddress": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
+              "url": "https://dexscreener.com/base/0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
+              "liquidityUsd": 25180.1,
+              "base": {
+                "symbol": "DAI",
+                "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+                "stable": true
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            },
+            {
+              "from": "DAI",
+              "to": "WETH",
+              "rate": 0.0004101,
+              "dex": "shark-swap",
+              "pairAddress": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
+              "url": "https://dexscreener.com/base/0xae45f7eb428eb6403f2567c3a3ec47e9230bc823",
+              "liquidityUsd": 61883.59,
+              "base": {
+                "symbol": "DAI",
+                "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+                "stable": true
+              },
+              "quote": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "USDC",
+              "rate": 2477.9395,
+              "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+              "pairAddress": "0x7877B97C887DD3A3a1CEa35822DA07e11a25e7da",
+              "url": "https://dexscreener.com/base/0x7877b97c887dd3a3a1cea35822da07e11a25e7da",
+              "liquidityUsd": 412349.32,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": 0.42120802234637544,
+              "estimatedImpactPercentByHop": [
+                0.3167050011678497,
+                0.1291080778244127,
+                0.019397263026789655
+              ],
+              "finalAmountUsd": 40.16848320893855,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.14151679106145337
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": 0.18804137275472144,
+              "estimatedImpactPercentByHop": [
+                0.4743064256663017,
+                0.19353718066969997,
+                0.029093072910246997
+              ],
+              "finalAmountUsd": 60.11282482365283,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.2271751763471707
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": -0.04429149819049627,
+              "estimatedImpactPercentByHop": [
+                0.6314102943555866,
+                0.25788320759646566,
+                0.038787002436696465
+              ],
+              "finalAmountUsd": 79.9645668014476,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -0.40543319855239707
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": -0.2757947217017054,
+              "estimatedImpactPercentByHop": [
+                0.7880189597361713,
+                0.32214631918031805,
+                0.048479052153085594
+              ],
+              "finalAmountUsd": 99.7242052782983,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -0.6757947217017005
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -0.8509499455823466,
+              "estimatedImpactPercentByHop": [
+                1.1773894136993184,
+                0.48244239356396124,
+                0.07270095586247421
+              ],
+              "finalAmountUsd": 148.72357508162648,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -1.7514249183735215
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -1.9860339333596433,
+              "estimatedImpactPercentByHop": [
+                1.947032916538487,
+                0.8014928284826186,
+                0.12110956123168616
+              ],
+              "finalAmountUsd": 245.03491516660088,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -5.590084833399118
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -3.65151531041783,
+              "estimatedImpactPercentByHop": [
+                3.079279910392955,
+                1.2762510890011247,
+                0.19363459196786284
+              ],
+              "finalAmountUsd": 385.39393875832866,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -15.45606124167134
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -6.332187721409199,
+              "estimatedImpactPercentByHop": [
+                4.909347019082254,
+                2.0574962581265166,
+                0.314275870198457
+              ],
+              "finalAmountUsd": 608.8407798108402,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -42.384220189159784
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -9.896924246597061,
+              "estimatedImpactPercentByHop": [
+                7.358324656642176,
+                3.13069443968318,
+                0.4826845136369477
+              ],
+              "finalAmountUsd": 901.0307575340294,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -100.71924246597064
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -19.01124566072153,
+              "estimatedImpactPercentByHop": [
+                13.707972213940323,
+                6.071314571655856,
+                0.9607317240244322
+              ],
+              "finalAmountUsd": 1619.7750867855693,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -383.47491321443067
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -39.30568932381554,
+              "estimatedImpactPercentByHop": [
+                28.42516081534732,
+                13.911380886792104,
+                2.367708322579991
+              ],
+              "finalAmountUsd": 3034.715533809223,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -1973.034466190777
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "grossReturnPercent": 0.42120802234637544,
+            "estimatedImpactPercentByHop": [
+              0.3167050011678497,
+              0.1291080778244127,
+              0.019397263026789655
+            ],
+            "finalAmountUsd": 40.16848320893855,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.14151679106145337
+          }
+        },
+        {
+          "route": [
+            "DAI",
+            "WETH",
+            "USDC",
+            "DAI"
+          ],
+          "edges": [
+            {
+              "from": "DAI",
+              "to": "WETH",
+              "rate": 0.0004101,
+              "dex": "shark-swap",
+              "pairAddress": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
+              "url": "https://dexscreener.com/base/0xae45f7eb428eb6403f2567c3a3ec47e9230bc823",
+              "liquidityUsd": 61883.59,
+              "base": {
+                "symbol": "DAI",
+                "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+                "stable": true
+              },
+              "quote": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "USDC",
+              "rate": 2477.9395,
+              "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+              "pairAddress": "0x7877B97C887DD3A3a1CEa35822DA07e11a25e7da",
+              "url": "https://dexscreener.com/base/0x7877b97c887dd3a3a1cea35822da07e11a25e7da",
+              "liquidityUsd": 412349.32,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            },
+            {
+              "from": "USDC",
+              "to": "DAI",
+              "rate": 1.0018032458425166,
+              "dex": "uniswap",
+              "pairAddress": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
+              "url": "https://dexscreener.com/base/0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
+              "liquidityUsd": 25180.1,
+              "base": {
+                "symbol": "DAI",
+                "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+                "stable": true
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": 0.42120802234637544,
+              "estimatedImpactPercentByHop": [
+                0.1291080778244127,
+                0.019397263026789655,
+                0.3167050011678497
+              ],
+              "finalAmountUsd": 40.16848320893855,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.14151679106145337
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": 0.18804137275469923,
+              "estimatedImpactPercentByHop": [
+                0.19353718066969997,
+                0.029093072910246997,
+                0.4743064256663017
+              ],
+              "finalAmountUsd": 60.11282482365282,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.2271751763471778
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": -0.044291498190474066,
+              "estimatedImpactPercentByHop": [
+                0.25788320759646566,
+                0.038787002436696465,
+                0.6314102943555866
+              ],
+              "finalAmountUsd": 79.96456680144762,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -0.40543319855238286
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": -0.2757947217016832,
+              "estimatedImpactPercentByHop": [
+                0.32214631918031805,
+                0.048479052153085594,
+                0.7880189597361713
+              ],
+              "finalAmountUsd": 99.72420527829831,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -0.6757947217016863
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -0.8509499455823466,
+              "estimatedImpactPercentByHop": [
+                0.48244239356396124,
+                0.07270095586247421,
+                1.1773894136993184
+              ],
+              "finalAmountUsd": 148.72357508162648,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -1.7514249183735215
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -1.9860339333596433,
+              "estimatedImpactPercentByHop": [
+                0.8014928284826186,
+                0.12110956123168616,
+                1.947032916538487
+              ],
+              "finalAmountUsd": 245.03491516660088,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -5.590084833399118
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -3.651515310417819,
+              "estimatedImpactPercentByHop": [
+                1.2762510890011247,
+                0.19363459196786284,
+                3.079279910392955
+              ],
+              "finalAmountUsd": 385.3939387583287,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -15.456061241671284
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -6.332187721409211,
+              "estimatedImpactPercentByHop": [
+                2.0574962581265166,
+                0.314275870198457,
+                4.909347019082254
+              ],
+              "finalAmountUsd": 608.8407798108401,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -42.3842201891599
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -9.896924246597061,
+              "estimatedImpactPercentByHop": [
+                3.13069443968318,
+                0.4826845136369477,
+                7.358324656642176
+              ],
+              "finalAmountUsd": 901.0307575340294,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -100.71924246597064
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -19.01124566072153,
+              "estimatedImpactPercentByHop": [
+                6.071314571655856,
+                0.9607317240244322,
+                13.707972213940323
+              ],
+              "finalAmountUsd": 1619.7750867855693,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -383.47491321443067
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -39.30568932381555,
+              "estimatedImpactPercentByHop": [
+                13.911380886792104,
+                2.367708322579991,
+                28.42516081534732
+              ],
+              "finalAmountUsd": 3034.7155338092225,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -1973.0344661907775
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "grossReturnPercent": 0.42120802234637544,
+            "estimatedImpactPercentByHop": [
+              0.1291080778244127,
+              0.019397263026789655,
+              0.3167050011678497
+            ],
+            "finalAmountUsd": 40.16848320893855,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.14151679106145337
+          }
+        },
+        {
+          "route": [
+            "USDC",
+            "AERO",
+            "cbBTC",
+            "USDC"
+          ],
+          "edges": [
+            {
+              "from": "USDC",
+              "to": "AERO",
+              "rate": 1.8477457501847745,
+              "dex": "aerodrome",
+              "pairAddress": "0x861Ee8B9F7e42eDCF4f1B5614c6595F71A879f3f",
+              "url": "https://dexscreener.com/base/0x861ee8b9f7e42edcf4f1b5614c6595f71a879f3f",
+              "liquidityUsd": 12734.6,
+              "base": {
+                "symbol": "AERO",
+                "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            },
+            {
+              "from": "AERO",
+              "to": "cbBTC",
+              "rate": 0.000007082,
+              "dex": "aerodrome",
+              "pairAddress": "0xCDBe19a6EF1B633BE744920C93eE40521d5cf2A6",
+              "url": "https://dexscreener.com/base/0xcdbe19a6ef1b633be744920c93ee40521d5cf2a6",
+              "liquidityUsd": 652234.31,
+              "base": {
+                "symbol": "AERO",
+                "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+              },
+              "quote": {
+                "symbol": "cbBTC",
+                "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+              }
+            },
+            {
+              "from": "cbBTC",
+              "to": "USDC",
+              "rate": 77286.2725,
+              "dex": "uniswap",
+              "pairAddress": "0x12d76c5c8ec8edffd3c143995b0aa43fe44a6d71eb9113796272909e54b8e078",
+              "url": "https://dexscreener.com/base/0x12d76c5c8ec8edffd3c143995b0aa43fe44a6d71eb9113796272909e54b8e078",
+              "liquidityUsd": 3290088.41,
+              "base": {
+                "symbol": "cbBTC",
+                "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": -0.4130573202034027,
+              "estimatedImpactPercentByHop": [
+                0.624287921589437,
+                0.012264026524268643,
+                0.0024314864782255933
+              ],
+              "finalAmountUsd": 39.83477707191864,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.47522292808136285
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": -0.7302388272596216,
+              "estimatedImpactPercentByHop": [
+                0.9335179624414606,
+                0.018394911807971346,
+                0.0036471853769287515
+              ],
+              "finalAmountUsd": 59.561856703644224,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.7781432963557757
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": -1.0454515725441205,
+              "estimatedImpactPercentByHop": [
+                1.2408294945170846,
+                0.02452504529047778,
+                0.004862854716796292
+              ],
+              "finalAmountUsd": 79.1636387419647,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -1.2063612580352965
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": -1.358713821299784,
+              "estimatedImpactPercentByHop": [
+                1.546240316670017,
+                0.03065442711006415,
+                0.006078494498906252
+              ],
+              "finalAmountUsd": 98.64128617870021,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -1.7587138212997873
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -2.1334538634200872,
+              "estimatedImpactPercentByHop": [
+                2.3015665996655055,
+                0.045974594040886524,
+                0.009117464646065903
+              ],
+              "finalAmountUsd": 146.79981920486986,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -3.6751807951301374
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -3.6477937498886837,
+              "estimatedImpactPercentByHop": [
+                3.7779759116255875,
+                0.0766008454496593,
+                0.015194850820008814
+              ],
+              "finalAmountUsd": 240.8805156252783,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -9.744484374721708
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -5.8353476081475675,
+              "estimatedImpactPercentByHop": [
+                5.910776823844074,
+                0.12250504877760555,
+                0.02430954503255247
+              ],
+              "finalAmountUsd": 376.6586095674097,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -24.191390432590286
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -9.273340466186497,
+              "estimatedImpactPercentByHop": [
+                9.262821883060436,
+                0.1989184010859353,
+                0.03949700971329603
+              ],
+              "finalAmountUsd": 589.7232869697878,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -61.50171303021225
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -13.694329303470765,
+              "estimatedImpactPercentByHop": [
+                13.57349368153869,
+                0.30570087343783603,
+                0.06075170988497238
+              ],
+              "finalAmountUsd": 863.0567069652924,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -138.6932930347076
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -24.286561786611838,
+              "estimatedImpactPercentByHop": [
+                23.90257311199551,
+                0.6095383827157711,
+                0.1214296491817595
+              ],
+              "finalAmountUsd": 1514.2687642677633,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -488.98123573223666
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -44.873817515149874,
+              "estimatedImpactPercentByHop": [
+                43.98581897196344,
+                1.5100395508049105,
+                0.30302218479049775
+              ],
+              "finalAmountUsd": 2756.309124242506,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -2251.440875757494
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "grossReturnPercent": -0.4130573202034027,
+            "estimatedImpactPercentByHop": [
+              0.624287921589437,
+              0.012264026524268643,
+              0.0024314864782255933
+            ],
+            "finalAmountUsd": 39.83477707191864,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.47522292808136285
+          }
+        },
+        {
+          "route": [
+            "USDC",
+            "WETH",
+            "AERO",
+            "USDC"
+          ],
+          "edges": [
+            {
+              "from": "USDC",
+              "to": "WETH",
+              "rate": 0.00041178758431608157,
+              "dex": "0x0e5Ab24beBdA7e5Bb3961f7E9b3532a83aE86B48",
+              "pairAddress": "0x966617c62D5053fcEed8fD051c0319ca2B5EfD65",
+              "url": "https://dexscreener.com/base/0x966617c62d5053fceed8fd051c0319ca2b5efd65",
+              "liquidityUsd": 46425.69,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "AERO",
+              "rate": 4466.279589102278,
+              "dex": "uniswap",
+              "pairAddress": "0x0D5959a52E7004b601f0bE70618D01aC3cDce976",
+              "url": "https://dexscreener.com/base/0x0d5959a52e7004b601f0be70618d01ac3cdce976",
+              "liquidityUsd": 374773.16,
+              "base": {
+                "symbol": "AERO",
+                "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+              },
+              "quote": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              }
+            },
+            {
+              "from": "AERO",
+              "to": "USDC",
+              "rate": 0.5471,
+              "dex": "aerodrome",
+              "pairAddress": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
+              "url": "https://dexscreener.com/base/0x6cdcb1c4a4d1c3c6d054b27ac5b77e89eafb971d",
+              "liquidityUsd": 32654275.92,
+              "base": {
+                "symbol": "AERO",
+                "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": -0.4755332137927004,
+              "estimatedImpactPercentByHop": [
+                0.17202196118367452,
+                0.021341690170092208,
+                0.0002449902861229057
+              ],
+              "finalAmountUsd": 39.80978671448292,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.500213285517082
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": -0.5717932574166196,
+              "estimatedImpactPercentByHop": [
+                0.257811195837896,
+                0.03200911961157147,
+                0.00036748497903310774
+              ],
+              "finalAmountUsd": 59.65692404555003,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.6830759544499723
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": -0.6678857088287193,
+              "estimatedImpactPercentByHop": [
+                0.34345310759591624,
+                0.042674272929073546,
+                0.0004899793718439463
+              ],
+              "finalAmountUsd": 79.46569143293702,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -0.904308567062979
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": -0.7638110000909304,
+              "estimatedImpactPercentByHop": [
+                0.428948075620972,
+                0.05333715085101025,
+                0.0006124734645565244
+              ],
+              "finalAmountUsd": 99.23618899990907,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -1.1638110000909252
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -1.0028957246428272,
+              "estimatedImpactPercentByHop": [
+                0.6420450933950895,
+                0.07998439557765212,
+                0.0009187073834153164
+              ],
+              "finalAmountUsd": 148.49565641303576,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -1.9793435869642393
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -1.477965675595816,
+              "estimatedImpactPercentByHop": [
+                1.0655144335650684,
+                0.13323628047366884,
+                0.0015311695943801167
+              ],
+              "finalAmountUsd": 246.30508581101046,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -4.319914188989543
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -2.1829204728055385,
+              "estimatedImpactPercentByHop": [
+                1.6939932481664108,
+                0.21300776658268128,
+                0.0024498488442038203
+              ],
+              "finalAmountUsd": 391.26831810877786,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -9.581681891222138
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -3.337872980129075,
+              "estimatedImpactPercentByHop": [
+                2.723899853517047,
+                0.3456774208507728,
+                0.00398094341739602
+              ],
+              "finalAmountUsd": 628.303825629161,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -22.921174370839
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -4.914166403317344,
+              "estimatedImpactPercentByHop": [
+                4.130039241567854,
+                0.530823373936721,
+                0.0061243970528039315
+              ],
+              "finalAmountUsd": 950.8583359668265,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -50.89166403317347
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -9.173213373881051,
+              "estimatedImpactPercentByHop": [
+                7.932464583032973,
+                1.0560410352201302,
+                0.012248043986762911
+              ],
+              "finalAmountUsd": 1816.535732522379,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -186.71426747762098
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -20.111628898000554,
+              "estimatedImpactPercentByHop": [
+                17.722423952635758,
+                2.598933875741229,
+                0.03061448545344029
+              ],
+              "finalAmountUsd": 3994.4185550999723,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -1013.3314449000277
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "grossReturnPercent": -0.4755332137927004,
+            "estimatedImpactPercentByHop": [
+              0.17202196118367452,
+              0.021341690170092208,
+              0.0002449902861229057
+            ],
+            "finalAmountUsd": 39.80978671448292,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.500213285517082
+          }
+        },
+        {
+          "route": [
+            "USDC",
+            "WETH",
+            "cbBTC",
+            "USDC"
+          ],
+          "edges": [
+            {
+              "from": "USDC",
+              "to": "WETH",
+              "rate": 0.00041178758431608157,
+              "dex": "0x0e5Ab24beBdA7e5Bb3961f7E9b3532a83aE86B48",
+              "pairAddress": "0x966617c62D5053fcEed8fD051c0319ca2B5EfD65",
+              "url": "https://dexscreener.com/base/0x966617c62d5053fceed8fd051c0319ca2b5efd65",
+              "liquidityUsd": 46425.69,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "cbBTC",
+              "rate": 0.03158250455577628,
+              "dex": "pancakeswap",
+              "pairAddress": "0xd974D59e30054cf1aBedeD0C9947B0D8Baf90029",
+              "url": "https://dexscreener.com/base/0xd974d59e30054cf1abeded0c9947b0d8baf90029",
+              "liquidityUsd": 291084.85,
+              "base": {
+                "symbol": "cbBTC",
+                "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+              },
+              "quote": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              }
+            },
+            {
+              "from": "cbBTC",
+              "to": "USDC",
+              "rate": 77286.2725,
+              "dex": "uniswap",
+              "pairAddress": "0x12d76c5c8ec8edffd3c143995b0aa43fe44a6d71eb9113796272909e54b8e078",
+              "url": "https://dexscreener.com/base/0x12d76c5c8ec8edffd3c143995b0aa43fe44a6d71eb9113796272909e54b8e078",
+              "liquidityUsd": 3290088.41,
+              "base": {
+                "symbol": "cbBTC",
+                "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+              },
+              "quote": {
+                "symbol": "USDC",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": -0.5900112017365067,
+              "estimatedImpactPercentByHop": [
+                0.17202196118367452,
+                0.027475844010703902,
+                0.0024314864782255933
+              ],
+              "finalAmountUsd": 39.763995519305396,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.5460044806946036
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": -0.690291835883261,
+              "estimatedImpactPercentByHop": [
+                0.257811195837896,
+                0.04120810487874773,
+                0.0036471853769287515
+              ],
+              "finalAmountUsd": 59.585824898470044,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.7541751015299563
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": -0.7903961565199014,
+              "estimatedImpactPercentByHop": [
+                0.34345310759591624,
+                0.054936593728610136,
+                0.004862854716796292
+              ],
+              "finalAmountUsd": 79.36768307478408,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -1.0023169252159176
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": -0.8903246191132919,
+              "estimatedImpactPercentByHop": [
+                0.428948075620972,
+                0.06866131211424144,
+                0.006078494498906252
+              ],
+              "finalAmountUsd": 99.10967538088671,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -1.2903246191132867
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -1.1393793715766432,
+              "estimatedImpactPercentByHop": [
+                0.6420450933950895,
+                0.10295662248740799,
+                0.009117464646065903
+              ],
+              "finalAmountUsd": 148.29093094263504,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -2.184069057364957
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -1.6342281753906729,
+              "estimatedImpactPercentByHop": [
+                1.0655144335650684,
+                0.17147667308503856,
+                0.015194850820008814
+              ],
+              "finalAmountUsd": 245.91442956152332,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -4.7105704384766796
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -2.368453585512287,
+              "estimatedImpactPercentByHop": [
+                1.6939932481664108,
+                0.27408068627063037,
+                0.02430954503255247
+              ],
+              "finalAmountUsd": 390.52618565795086,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -10.323814342049138
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -3.571153190503207,
+              "estimatedImpactPercentByHop": [
+                2.723899853517047,
+                0.44461948011328223,
+                0.03949700971329603
+              ],
+              "finalAmountUsd": 626.7875042617292,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -24.43749573827083
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -5.212184763412875,
+              "estimatedImpactPercentByHop": [
+                4.130039241567854,
+                0.6823962412250241,
+                0.06075170988497238
+              ],
+              "finalAmountUsd": 947.8781523658713,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -53.8718476341287
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -9.643546421599458,
+              "estimatedImpactPercentByHop": [
+                7.932464583032973,
+                1.3555423126602402,
+                0.1214296491817595
+              ],
+              "finalAmountUsd": 1807.1290715680109,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -196.1209284319891
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -21.00459432279097,
+              "estimatedImpactPercentByHop": [
+                17.722423952635758,
+                3.3213228762589684,
+                0.30302218479049775
+              ],
+              "finalAmountUsd": 3949.7702838604514,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -1057.9797161395486
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "grossReturnPercent": -0.5900112017365067,
+            "estimatedImpactPercentByHop": [
+              0.17202196118367452,
+              0.027475844010703902,
+              0.0024314864782255933
+            ],
+            "finalAmountUsd": 39.763995519305396,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.5460044806946036
+          }
+        },
+        {
+          "route": [
+            "USDbC",
+            "AERO",
+            "WETH",
+            "USDbC"
+          ],
+          "edges": [
+            {
+              "from": "USDbC",
+              "to": "AERO",
+              "rate": 1.8355359765051398,
+              "dex": "aerodrome",
+              "pairAddress": "0x2223F9FE624F69Da4D8256A7bCc9104FBA7F8f75",
+              "url": "https://dexscreener.com/base/0x2223f9fe624f69da4d8256a7bcc9104fba7f8f75",
+              "liquidityUsd": 234478.16,
+              "base": {
+                "symbol": "AERO",
+                "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+              },
+              "quote": {
+                "symbol": "USDbC",
+                "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+                "stable": true
+              }
+            },
+            {
+              "from": "AERO",
+              "to": "WETH",
+              "rate": 0.0002244,
+              "dex": "aerodrome",
+              "pairAddress": "0x7f670f78B17dEC44d5Ef68a48740b6f8849cc2e6",
+              "url": "https://dexscreener.com/base/0x7f670f78b17dec44d5ef68a48740b6f8849cc2e6",
+              "liquidityUsd": 2798579.78,
+              "base": {
+                "symbol": "AERO",
+                "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631"
+              },
+              "quote": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              }
+            },
+            {
+              "from": "WETH",
+              "to": "USDbC",
+              "rate": 2439.7154,
+              "dex": "uniswap",
+              "pairAddress": "0x4C36388bE6F416A29C8d8Eee81C771cE6bE14B18",
+              "url": "https://dexscreener.com/base/0x4c36388be6f416a29c8d8eee81c771ce6be14b18",
+              "liquidityUsd": 48738.73,
+              "base": {
+                "symbol": "WETH",
+                "address": "0x4200000000000000000000000000000000000006"
+              },
+              "quote": {
+                "symbol": "USDbC",
+                "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+                "stable": true
+              }
+            }
+          ],
+          "estimates": [
+            {
+              "tradeSizeUsd": 40,
+              "grossReturnPercent": -0.6111731966239597,
+              "estimatedImpactPercentByHop": [
+                0.03410667955444398,
+                0.002858511083472962,
+                0.16387153045562636
+              ],
+              "finalAmountUsd": 39.75553072135042,
+              "flashLoanFeeUsd": 0.02,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.04,
+              "netProfitUsd": -0.5544692786495822
+            },
+            {
+              "tradeSizeUsd": 60,
+              "grossReturnPercent": -0.7108929685072041,
+              "estimatedImpactPercentByHop": [
+                0.051151296327302816,
+                0.004287705342943216,
+                0.24560605648161546
+              ],
+              "finalAmountUsd": 59.57346421889568,
+              "flashLoanFeeUsd": 0.03,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.06,
+              "netProfitUsd": -0.7665357811043203
+            },
+            {
+              "tradeSizeUsd": 80,
+              "grossReturnPercent": -0.8104433030819758,
+              "estimatedImpactPercentByHop": [
+                0.06819010172940326,
+                0.005716858749904931,
+                0.3272068620187068
+              ],
+              "finalAmountUsd": 79.35164535753442,
+              "flashLoanFeeUsd": 0.04,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.08,
+              "netProfitUsd": -1.0183546424655772
+            },
+            {
+              "tradeSizeUsd": 100,
+              "grossReturnPercent": -0.909824619032984,
+              "estimatedImpactPercentByHop": [
+                0.08522309873232345,
+                0.007145971306109694,
+                0.4086742749556435
+              ],
+              "finalAmountUsd": 99.09017538096701,
+              "flashLoanFeeUsd": 0.05,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.1,
+              "netProfitUsd": -1.309824619032989
+            },
+            {
+              "tradeSizeUsd": 150,
+              "grossReturnPercent": -1.1575411877029373,
+              "estimatedImpactPercentByHop": [
+                0.12778019897591839,
+                0.010718573986053807,
+                0.6117613567888075
+              ],
+              "finalAmountUsd": 148.2636882184456,
+              "flashLoanFeeUsd": 0.075,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.15,
+              "netProfitUsd": -2.211311781554406
+            },
+            {
+              "tradeSizeUsd": 250,
+              "grossReturnPercent": -1.649838919954305,
+              "estimatedImpactPercentByHop": [
+                0.21278573293790365,
+                0.01786301353654164,
+                1.0154607968158398
+              ],
+              "finalAmountUsd": 245.87540270011425,
+              "flashLoanFeeUsd": 0.125,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.25,
+              "netProfitUsd": -4.74959729988575
+            },
+            {
+              "tradeSizeUsd": 400,
+              "grossReturnPercent": -2.380542684446496,
+              "estimatedImpactPercentByHop": [
+                0.34002306036395386,
+                0.02857775874911835,
+                1.6148980807541895
+              ],
+              "finalAmountUsd": 390.477829262214,
+              "flashLoanFeeUsd": 0.2,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.4,
+              "netProfitUsd": -10.372170737785984
+            },
+            {
+              "tradeSizeUsd": 650,
+              "grossReturnPercent": -3.578150610948394,
+              "estimatedImpactPercentByHop": [
+                0.5513657414240573,
+                0.0464305649580426,
+                2.5979875988059646
+              ],
+              "finalAmountUsd": 626.7420210288354,
+              "flashLoanFeeUsd": 0.325,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 0.65,
+              "netProfitUsd": -24.48297897116456
+            },
+            {
+              "tradeSizeUsd": 1000,
+              "grossReturnPercent": -5.213581223211672,
+              "estimatedImpactPercentByHop": [
+                0.8457440636378429,
+                0.07141378418435915,
+                3.941762042526488
+              ],
+              "finalAmountUsd": 947.8641877678833,
+              "flashLoanFeeUsd": 0.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 1,
+              "netProfitUsd": -53.88581223211668
+            },
+            {
+              "tradeSizeUsd": 2000,
+              "grossReturnPercent": -9.637459965102613,
+              "estimatedImpactPercentByHop": [
+                1.6773024414478876,
+                0.14272564258634593,
+                7.584558824226521
+              ],
+              "finalAmountUsd": 1807.2508006979479,
+              "flashLoanFeeUsd": 1,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 2,
+              "netProfitUsd": -195.99919930205215
+            },
+            {
+              "tradeSizeUsd": 5000,
+              "grossReturnPercent": -21.027968778953987,
+              "estimatedImpactPercentByHop": [
+                4.0903449207896525,
+                0.356051840549817,
+                17.024542410092966
+              ],
+              "finalAmountUsd": 3948.6015610523004,
+              "flashLoanFeeUsd": 2.5,
+              "estimatedGasUsd": 0.25,
+              "safetyMarginUsd": 5,
+              "netProfitUsd": -1059.1484389476996
+            }
+          ],
+          "best": {
+            "tradeSizeUsd": 40,
+            "grossReturnPercent": -0.6111731966239597,
+            "estimatedImpactPercentByHop": [
+              0.03410667955444398,
+              0.002858511083472962,
+              0.16387153045562636
+            ],
+            "finalAmountUsd": 39.75553072135042,
+            "flashLoanFeeUsd": 0.02,
+            "estimatedGasUsd": 0.25,
+            "safetyMarginUsd": 0.04,
+            "netProfitUsd": -0.5544692786495822
+          }
+        }
+      ],
+      "liveQuotes": [
+        {
+          "type": "direct",
+          "route": "WETH/USDC",
+          "screeningNetProfitUsd": 0.5776698126912777,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "direct",
+          "route": "WETH/USDC",
+          "screeningNetProfitUsd": 0.5423787814131685,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "direct",
+          "route": "WETH/USDC",
+          "screeningNetProfitUsd": 0.4611524516960133,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "direct",
+          "route": "WETH/USDC",
+          "screeningNetProfitUsd": 0.3414123603835682,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "direct",
+          "route": "WETH/USDC",
+          "screeningNetProfitUsd": 0.18304776846875595,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "direct",
+          "route": "WETH/USDC",
+          "screeningNetProfitUsd": -0.06498354519391114,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "direct",
+          "route": "cbBTC/USDC",
+          "screeningNetProfitUsd": -0.4496691752408259,
+          "status": "quote_failed",
+          "message": "could not decode result data"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 2.518846406809098,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 2.259833646701702,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 1.6215765767114476,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 1.1988810202079776,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 0.9942955014562586,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 0.6200157093600381,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 0.45897319705395484,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 0.2914526465626642,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → cbBTC → WETH → USDC",
+          "screeningNetProfitUsd": 0.11745178176750895,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → AERO → WETH → USDC",
+          "screeningNetProfitUsd": 0.1626281168464379,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → AERO → WETH → USDC",
+          "screeningNetProfitUsd": 0.15549145366095243,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → AERO → WETH → USDC",
+          "screeningNetProfitUsd": 0.040978622644378807,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDC → AERO → WETH → USDC",
+          "screeningNetProfitUsd": -0.2082609012929538,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDbC → WETH → USDC → USDbC",
+          "screeningNetProfitUsd": -0.09594981219322335,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDbC → WETH → USDC → USDbC",
+          "screeningNetProfitUsd": -0.13651601961889184,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDbC → WETH → USDC → USDbC",
+          "screeningNetProfitUsd": -0.255020179525128,
+          "status": "unsupported_dex"
+        },
+        {
+          "type": "triangle",
+          "route": "USDbC → WETH → USDC → USDbC",
+          "screeningNetProfitUsd": -0.45112235290866354,
+          "status": "unsupported_dex"
+        }
+      ],
+      "best": {
+        "type": "triangle",
+        "route": "USDC → cbBTC → WETH → USDC",
+        "tradeSizeUsd": 650,
+        "grossReturnPercent": 0.5759763702783305,
+        "estimatedImpactPercentByHop": [
+          0.055625258045037214,
+          0.1501917330334089,
+          0.314275870198457
+        ],
+        "finalAmountUsd": 653.7438464068091,
+        "flashLoanFeeUsd": 0.325,
+        "estimatedGasUsd": 0.25,
+        "safetyMarginUsd": 0.65,
+        "netProfitUsd": 2.518846406809098
+      },
+      "bestVerified": null,
       "screeningOpportunity": true,
       "opportunity": false
     }
