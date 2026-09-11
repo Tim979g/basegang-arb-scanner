@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: paper-arbitrage-scan
+  group: paper-arbitrage-scan-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -23,6 +23,8 @@ jobs:
           node-version: 24
       - run: npm ci
       - run: npm test
+      - run: npm run test:baseswap
+      - run: npm run test:slipstream
       - run: npm run scan
       - name: Save scan result
         run: |
@@ -31,7 +33,7 @@ jobs:
           git add docs/data.json
           git diff --cached --quiet || git commit -m "data: paper scan"
           for attempt in 1 2 3; do
-            git pull --rebase origin main && git push && exit 0
+            git push origin HEAD:${{ github.ref_name }} && exit 0
             sleep $((attempt * 2))
           done
           exit 1
